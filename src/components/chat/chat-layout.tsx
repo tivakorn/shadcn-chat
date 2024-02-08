@@ -53,7 +53,7 @@ export function ChatLayout({
       }}
       className="h-full items-stretch"
     >
-      <ResizablePanel
+      {/* <ResizablePanel
         defaultSize={defaultLayout[0]}
         collapsedSize={navCollapsedSize}
         collapsible={true}
@@ -74,8 +74,8 @@ export function ChatLayout({
         className={cn(
           isCollapsed && "min-w-[50px] md:min-w-[70px] transition-all duration-300 ease-in-out"
         )}
-      >
-        <Sidebar
+      > */}
+        {/* <Sidebar
           isCollapsed={isCollapsed || isMobile}
           links={userData.map((user) => ({
             name: user.name,
@@ -84,9 +84,9 @@ export function ChatLayout({
             variant: selectedUser.name === user.name ? "grey" : "ghost",
           }))}
           isMobile={isMobile}
-        />
-      </ResizablePanel>
-      <ResizableHandle withHandle />
+        /> */}
+      {/* </ResizablePanel> */}
+      {/* <ResizableHandle withHandle /> */}
       <ResizablePanel defaultSize={defaultLayout[1]} minSize={30}>
         <Chat
           messages={selectedUser.messages}
