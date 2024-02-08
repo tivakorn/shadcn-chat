@@ -1,3 +1,5 @@
+import PWA from 'next-pwa'
+
 /** @type {import('next').NextConfig} */
 // Configuration options for Next.js
 const nextConfig = {
@@ -9,7 +11,7 @@ const nextConfig = {
 };
 
 // Configuration object tells the next-pwa plugin 
-const withPWA = require("next-pwa")({
+const withPWA = PWA({
     dest: "public", // Destination directory for the PWA files
     disable: process.env.NODE_ENV === "development", // Disable PWA in development mode
     register: true, // Register the PWA service worker
