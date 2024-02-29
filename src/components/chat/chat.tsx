@@ -2,7 +2,7 @@ import { Message, UserData } from "@/app/data";
 import ChatTopbar from "./chat-topbar";
 import { ChatList } from "./chat-list";
 import React from "react";
-
+import { detectTextIntent } from '../../lib/dialogflow'
 interface ChatProps {
   messages?: Message[];
   selectedUser: UserData;
@@ -17,7 +17,7 @@ export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
 
   const sendMessage = async (newMessage: Message) => {
 
-    const data = await fetch(`https://shadcn-chat-ten.vercel.app/api/${newMessage}`);
+    const data = await fetch(`https://shadcn-chat-ten.vercel.app/api/${newMessage.message}`);
     const result = await data.json()
 
     // let text = await detectTextIntent()
