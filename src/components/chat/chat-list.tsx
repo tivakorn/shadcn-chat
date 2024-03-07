@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { Avatar, AvatarImage } from "../ui/avatar";
 import ChatBottombar from "./chat-bottombar";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { MenuCart } from '../menuCart'
 interface ChatListProps {
   messages?: Message[];
   selectedUser: UserData;
@@ -72,6 +72,8 @@ export function ChatList({
                 <span className=" bg-accent p-3 rounded-md max-w-xs">
                   {message.message}
                 </span>
+
+                <MenuCart />
                 {message.name !== selectedUser.name && (
                   <Avatar className="flex justify-center items-center">
                     <AvatarImage
@@ -87,7 +89,7 @@ export function ChatList({
           ))}
         </AnimatePresence>
       </div>
-      <ChatBottombar sendMessage={sendMessage} isMobile={isMobile}/>
+      <ChatBottombar sendMessage={sendMessage} isMobile={isMobile} />
     </div>
   );
 }
