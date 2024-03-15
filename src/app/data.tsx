@@ -1,11 +1,11 @@
 export const userData = [
     {
         id: 1,
-        avatar: '/User1.png',
+        avatar: '/User1.jpeg',
         messages: [
             {
                 id: 1,
-                avatar: '/User1.png',
+                avatar: '/User1.jpeg',
                 name: 'Jane Doe',
                 message: 'Hey, Jakob',
             },
@@ -17,7 +17,7 @@ export const userData = [
             },
             {
                 id : 3,
-                avatar: '/User1.png',
+                avatar: '/User1.jpeg',
                 name: 'Jane Doe',
                 message: 'How are you?',
             },
@@ -29,7 +29,7 @@ export const userData = [
             },
             {
                 id: 5,
-                avatar: '/User1.png',
+                avatar: '/User1.jpeg',
                 name: 'Jane Doe',
                 message: 'I am good too!',
             },
@@ -41,7 +41,7 @@ export const userData = [
             },
             {
                 id: 7,
-                avatar: '/User1.png',
+                avatar: '/User1.jpeg',
                 name: 'Jane Doe',
                 message: 'How has your day been so far?',
             },
@@ -53,7 +53,7 @@ export const userData = [
             },
             {
                 id: 9,
-                avatar: '/User1.png',
+                avatar: '/User1.jpeg',
                 name: 'Jane Doe',
                 message: 'I had a relaxing day. Just catching up on some reading.',
             }

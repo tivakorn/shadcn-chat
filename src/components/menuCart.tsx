@@ -5,61 +5,90 @@
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
+import * as React from 'react'
+import menuCard from '../static/json/menu_card.json'
+import { useStore } from '../store/zustand'
+import { Message } from "@/app/data";
 
-export function MenuCart() {
-  return (
-    <Card>
-      <CardHeader className="flex items-start">
-        <h2 className="text-lg font-bold peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Todo List</h2>
-      </CardHeader>
+type Props = {
+  type: string
+  id: string
+  sendMessage: (newMessage: Message) => void
+}
+
+interface Data {
+  id?: string
+  type?: string
+  title?: string
+  menu?: Array<{
+    title?: string
+    text_link?: string
+  }>
+}
+
+export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
+
+  const [data, setData] = React.useState<Data>({})
+
+  const { messagesState } = useStore()
+
+  React.useEffect(() => {
+
+    const menu: Data | undefined = menuCard.find((item) => {
+
+      return item.id === id
+    })
+
+    if (menu) setData(menu)
+  }, [])
+
+  const RenderMenu = () => {
+
+    const memu = data.menu?.map((item, key) => {
+
+      return (
+        <li key={key} className="flex items-center justify-between p-4">
+          <div className="flex items-center space-x-4">
+            <label
+              className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              htmlFor="todo1"
+              onClick={() => sendMessage(
+                {
+                  id: messagesState.length + 1,
+                  avatar: '/LoggedInUser.jpg',
+                  name: 'Jakob Hoeg',
+                  message: item.text_link || ''
+                })}
+            >
+              {item.title}
+            </label>
+          </div>
+        </li>
+      )
+    })
+
+    return (
       <CardContent className="flex flex-col p-0">
         <div className="border-t border-gray-200 dark:border-gray-800">
           <ul className="divide-y divide-gray-200 dark:divide-gray-800">
-            <li className="flex items-center justify-between p-4">
-              <div className="flex items-center space-x-4">
-                <Checkbox className="peer-hidden" id="todo1" />
-                <label
-                  className="text-sm font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="todo1"
-                >
-                  Add a new task
-                </label>
-              </div>
-              <Button className="rounded-lg p-2" variant="ghost">
-                <span className="sr-only">Delete</span>
-              </Button>
-            </li>
-            <li className="flex items-center justify-between p-4">
-              <div className="flex items-center space-x-4">
-                <Checkbox className="peer-hidden" defaultChecked id="todo2" />
-                <label
-                  className="text-sm font-medium line-through peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="todo2"
-                >
-                  Complete the tutorial
-                </label>
-              </div>
-              <Button className="rounded-lg p-2" variant="ghost">
-                <span className="sr-only">Delete</span>
-              </Button>
-            </li>
-            <li className="flex items-center justify-between p-4">
-              <div className="flex items-center space-x-4">
-                <Checkbox className="peer-hidden" id="todo3" />
-                <label
-                  className="text-sm font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="todo3"
-                >
-                  Walk the dog
-                </label>
-              </div>
-              <Button className="rounded-lg p-2" variant="ghost">
-                <span className="sr-only">Delete</span>
-              </Button>
-            </li>
+            {
+              memu
+            }
           </ul>
         </div>
       </CardContent>
+    )
+  }
+
+
+  if (!data.id) return
+
+  return (
+    <Card>
+      <CardHeader className="flex items-start">
+        <h2 className="text-lg peer-disabled:cursor-not-allowed peer-disabled:opacity-70">{data.title}</h2>
+      </CardHeader>
+      <RenderMenu />
     </Card>
   )
 }

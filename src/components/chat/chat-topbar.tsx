@@ -15,8 +15,8 @@ interface ChatTopbarProps {
 
 export default function ChatTopbar({selectedUser}: ChatTopbarProps) {
   return (
-    <div className="w-full h-20 flex p-4 justify-between items-center border-b">
-        <div className="flex items-center gap-2" />
+    <div className="w-full h-20 flex p-4 justify-center items-center border-b bg-teal-500" >
+        {/* <div className="flex items-center" /> */}
           {/* <Avatar className="flex justify-center items-center">
             <AvatarImage
               src={selectedUser.avatar}
@@ -32,8 +32,8 @@ export default function ChatTopbar({selectedUser}: ChatTopbarProps) {
           </div> */}
         {/* </div> */}
 
-        <div>
-          {TopbarIcons.map((icon, index) => (
+          <h1 className='text-white'>Tokio Marine Life Thailand</h1>
+          {/* {TopbarIcons.map((icon, index) => (
             <Link
               key={index}
               href="#"
@@ -45,8 +45,7 @@ export default function ChatTopbar({selectedUser}: ChatTopbarProps) {
             >
               <icon.icon size={20} className="text-muted-foreground" />
             </Link>
-          ))}
-        </div>
+          ))} */}
       </div>
   )
 }

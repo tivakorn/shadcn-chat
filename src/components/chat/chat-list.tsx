@@ -5,6 +5,7 @@ import { Avatar, AvatarImage } from "../ui/avatar";
 import ChatBottombar from "./chat-bottombar";
 import { AnimatePresence, motion } from "framer-motion";
 import { MenuCart } from '../menuCart'
+import { MenuSlider } from '../menuSlider'
 interface ChatListProps {
   messages?: Message[];
   selectedUser: UserData;
@@ -18,6 +19,7 @@ export function ChatList({
   sendMessage,
   isMobile
 }: ChatListProps) {
+  
   const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -59,36 +61,57 @@ export function ChatList({
               )}
             >
               <div className="flex gap-3 items-center">
-                {message.name === selectedUser.name && (
-                  <Avatar className="flex justify-center items-center">
-                    <AvatarImage
-                      src={message.avatar}
-                      alt={message.name}
-                      width={6}
-                      height={6}
-                    />
-                  </Avatar>
-                )}
-                <span className=" bg-accent p-3 rounded-md max-w-xs">
-                  {message.message}
-                </span>
 
-                <MenuCart />
+                {message.name === selectedUser.name && (
+                  <>
+                    <Avatar className="flex justify-center items-center">
+                      <AvatarImage
+                        src={message.avatar}
+                        alt={message.name}
+                        width={6}
+                        height={6}
+                      />
+                    </Avatar>
+
+                    {
+                      message.message.split(":")[0] === "menu-card" ?
+                        <MenuCart
+                          type={message.message.split(":")[0]}
+                          id={message.message.split(":")[1]}
+                          sendMessage={sendMessage}
+                        /> : message.message.split(":")[0] === "menu-carousel" ?
+                          <MenuSlider
+                            type={message.message.split(":")[0]}
+                            id={message.message.split(":")[1]}
+                            sendMessage={sendMessage}
+                          /> : <span className=" bg-accent p-3 rounded-md max-w-xs">
+                            {message.message}
+                          </span>
+                    }
+                  </>
+                )}
+
                 {message.name !== selectedUser.name && (
-                  <Avatar className="flex justify-center items-center">
-                    <AvatarImage
-                      src={message.avatar}
-                      alt={message.name}
-                      width={6}
-                      height={6}
-                    />
-                  </Avatar>
+                  <>
+                    <span className=" bg-accent p-3 rounded-md max-w-xs">
+                      {message.message}
+                    </span>
+                    {/* <Avatar className="flex justify-center items-center">
+                      <AvatarImage
+                        src={message.avatar}
+                        alt={message.name}
+                        width={6}
+                        height={6}
+                      />
+                    </Avatar> */}
+                  </>
                 )}
               </div>
             </motion.div>
           ))}
         </AnimatePresence>
       </div>
+
       <ChatBottombar sendMessage={sendMessage} isMobile={isMobile} />
     </div>
   );

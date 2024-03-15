@@ -21,9 +21,11 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@types/dialogflow": "^4.0.4",
+    "@types/react-slick": "^0.23.13",
     "@types/uuid": "^9.0.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "embla-carousel-react": "^8.0.0",
     "emoji-mart": "^5.5.2",
     "framer-motion": "^10.18.0",
     "fs": "^0.0.1-security",
@@ -35,9 +37,12 @@
     "react": "^18",
     "react-dom": "^18",
     "react-resizable-panels": "^1.0.9",
+    "react-responsive-carousel": "^3.2.23",
+    "react-slick": "^0.30.2",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

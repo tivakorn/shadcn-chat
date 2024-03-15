@@ -1,0 +1,238 @@
+[
+    {
+        "id": "1",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "ประกันอุบัติเหตุ",
+                "desc": "",
+                "text_link": "ประกันอุบัติเหตุ",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2F0ccc3e7c-f79c-4360-9c51-f57ffd034518.png"
+            },
+            {
+                "title": "ประกันสุขภาพ",
+                "desc": "",
+                "text_link": "ประกันสุขภาพ",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2Feb8fd225-5aaf-4e21-9a05-f89d76ba4708.png"
+            },
+            {
+                "title": "คุ้มครองตลอดชีพ",
+                "desc": "",
+                "text_link": "คุ้มครองตลอดชีพ",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2Fbf790278-2dbc-4a75-8aa2-805be0fc4dc5.png"
+            },
+            {
+                "title": "แบบชั่วระยะเวลา",
+                "desc": "",
+                "text_link": "แบบชั่วระยะเวลา",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2Ff9013f03-652d-4e1c-85a9-a1cdba89ca05.png"
+            }
+        ]
+    },
+    {
+        "id": "1-1",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "พีเอ แคร์",
+                "desc": "อิสระกับการใช้ชีวิตได้ทุกที่ รับความคุ้มครองในทุกทางที่คุณไป",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/personal-accident/pa-care.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F50516033-5d26-45c5-a47c-b18d636a7925.png"
+            }
+        ]
+    },
+    {
+        "id": "1-2",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "ประกันสุขภาพเหมาจ่าย โตเกียว กู๊ด เฮลธ์",
+                "desc": "คุ้มครองค่ารักษาพยาบาลวงเงินเริ่มต้น 5 แสนบาท รวมสูงสุดถึง 240 ล้านบาท",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/promotions/tokiogoodhealth.html",
+                "image": "https://upload.convolab.ai/tml-uat%2Fee0facb7-9039-4b88-befd-568797f036ec.png"
+            },
+            {
+                "title": "ประกันโรคร้ายแรง เออรี่ ซีไอ แคร์",
+                "desc": "คุ้มครองตั้งแต่ตรวจพบ ตัวช่วยทางการเงิน ให้คุณได้รับการรักษาอย่างรวดเร็ว",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/riders/tokio-ci/early-ci-care.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F590843b7-3ec7-4ab5-b00c-3e0c951ff9a5.png"
+            },
+            {
+                "title": "ประกัน OPD",
+                "desc": "เพิ่มความคุ้มครองค่ารักษาพยาบาลแบบผู้ป่วยนอก (OPD) ช่วยลดภาระค่าใช้จ่าย",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/riders/health/outpatient-department.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F0216d27d-5e61-4f7d-9cc9-0f28a40bbfd2.png"
+            },
+            {
+                "title": "สัญญาเพิ่มเติมสุขภาพอื่นๆ",
+                "desc": "ยกระดับให้คุณอุ่นใจ ไร้กังวล ครอบคลุมค่าใช้จ่ายในการรักษาพยาบาลและค่าใช้จ่ายอื่นๆที่อาจเกิดขึ้น",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/riders/health.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F02f20f63-db45-4bd9-a3b7-225f6bcb3b11.png"
+            }
+        ]
+    },
+    {
+        "id": "1-3",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "โตเกียว อีซี่ ไลฟ์",
+                "desc": "ออมอย่างง่ายๆ เพื่อสร้างหลักประกันความคุ้มครองที่เพิ่มค่าให้กับครอบครัวในวันหน้า",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/whole-life/tokio-easy-life.html",
+                "image": "https://upload.convolab.ai/tml-prod%2Ff9602ae3-c82b-43a5-8ffa-b1af2be99f0a.png"
+            },
+            {
+                "title": "โตเกียว ออล ไลฟ์",
+                "desc": "แบบประกันที่มีเบี้ยประกันระดับต่ำ ความคุ้มครองระยะยาว",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/whole-life/tokio-all-life.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F8a5f809a-383f-47ee-9560-6b7dd6d19107.png"
+            },
+            {
+                "title": "โตเกียว แฮปปี้ ไลฟ์",
+                "desc": "สร้างความสุขที่แท้จริง ด้วยการสร้างหลักประกันความมั่นคงในชีวิตให้กับตัวคุณและคนที่คุณรัก",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/riders/health/outpatient-department.html",
+                "image": "https://upload.convolab.ai/tml-dev%2F1c6dd8e4-5497-4598-a8c2-d181291f208c.jpg"
+            },
+            {
+                "title": "ประกันตลอดชีพทั้งหมด",
+                "desc": "ไว้เป็นมรดกและสำรองเงินให้แก่ครอบครัวของคุณได้ในอนาคต",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/whole-life.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F9a4d8a77-4883-49ad-842f-4a46a165bcc9.png"
+            }
+        ]
+    },
+    {
+        "id": "1-4",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "โตเกียว เทอม ไลฟ์",
+                "desc": "เปลี่ยนความไม่แน่นอนให้เป็นความมั่นคง เปลี่ยนความกังวลให้เป็นความอุ่นใจ",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/term/tokio-term-life.html",
+                "image": "https://upload.convolab.ai/tml-dev%2Ffad93046-1a67-4f6f-b4c1-7c3b58a53d26.png"
+            },
+            {
+                "title": "มั้นท์ลี่ แคร์",
+                "desc": "ปกป้องสถานะทางการเงินให้กับครอบครัวที่คุณรักด้วยเบี้ยประกันภัยต่ำ ความคุ้มครองรายเดือนคงที่",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/term/monthly-care.html",
+                "image": "https://upload.convolab.ai/tml-dev%2Fbbd4c0a8-0238-423c-baa1-641d0ff9003c.png"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "สะสมทรัพย์",
+                "desc": "",
+                "text_link": "สะสมทรัพย์",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2F5fe7badc-0a35-49b0-b7ce-680333dff0ae.png"
+            },
+            {
+                "title": "บำนาญ",
+                "desc": "",
+                "text_link": "บำนาญ",
+                "link": "",
+                "image": "https://upload.convolab.ai/tml-dev%2Fd8ad36a9-1a70-45d5-8cbd-90bb387353c1.png"
+            }
+        ]
+    },
+    {
+        "id": "2-1",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "โตเกียว แฮปปี้ เซฟวิ่ง 10/5",
+                "desc": "แผนการออมเพื่อความมั่งคั่งอย่างมั่นคง",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/endowment/Tokio-Happy-Savings.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F483ef0a6-d11b-4018-b1ce-ff1432d0a200.png"
+            },
+            {
+                "title": "โตเกียว แทกซ์ เซฟเวอร์15/10",
+                "desc": "วางแผนการออมเงินอย่างชาญฉลาด ที่ให้คุณได้ใช้สิทธิลดหย่อนภาษีเต็มที่ สบายใจดีเพราะการันตีผลตอบแทนตามสัญญา",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/endowment/tax-saver.htm",
+                "image": "https://upload.convolab.ai/tml-uat%2F532e840c-2214-4fc5-8c9d-777014f71d12.png"
+            },
+            {
+                "title": "โตเกียว ซูเปอร์ ฮีโร่ 15/5",
+                "desc": "แผนการออมระยะสั้น ที่ได้รับผลตอบแทนแบบการันตี",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/endowment/tokio-super-hero.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F1598dd93-899e-4ffa-879f-8cc871d03be2.png"
+            }
+        ]
+    },
+    {
+        "id": "2-2",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "สมาร์ท แพลนนิ่ง 550",
+                "desc": "สร้างชีวิตหลังเกษียณอย่างมั่นคง เพื่อปักธงความสุขในแบบฉบับที่คุณเลือกเอง",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/for-your-retirement/retirement-plan-tax-deductible/smart-planning-550.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F6ba64e3a-079d-4813-acef-856617a3693f.png"
+            },
+            {
+                "title": "เพนชั่น คิด ดี",
+                "desc": "รองรับทุกโอกาสและสานฝันให้กับบุตรหลานของคุณให้เป็นจริง",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/for-your-retirement/retirement-plan/pension-kid-dee.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F869769a4-3f64-4d81-b9c1-a7fa535fffe2.png"
+            },
+            {
+                "title": "โตเกียว ยัง แฮปปี้ แอนนิวตี้",
+                "desc": "วางแผนเก็บออม การันตีรับผลประโยชน์เงินคืนเพิ่มขึ้นทุกปีตลอดสัญญา",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/for-your-retirement/retirement-plan-tax-deductible/Tokio-Young-Happy-Annuity.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F03ed083c-86b2-4ed7-948e-e49d0faf8475.png"
+            },
+            {
+                "title": "แผนประกันบำนาญทั้งหมด",
+                "desc": "สร้างชีวิตหลังเกษียณที่มั่นคงและสุขสบายในอนาคต",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/life/for-your-retirement.html",
+                "image": "https://upload.convolab.ai/tml-prod%2Fc73c0f17-8550-4a27-8f22-c20d491a041b.png"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "type": "menu-carousel",
+        "menu": [
+            {
+                "title": "โตเกียว บียอนด์",
+                "desc": "เสริมความมั่นคงให้กับชีวิตและตอบโจทย์เป้าหมายทางการเงินของคุณ",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/wealth/tokio-beyond.html",
+                "image": "https://upload.convolab.ai/tml-prod%2F2af44a14-4eb7-47cb-b818-2de9fc879751.png"
+            },
+            {
+                "title": "โตเกียว ลิงค์",
+                "desc": "แผนการประกันชีวิตควบการลงทุน ออกแบบความสุข ทุกความต้องการ",
+                "text_link": "",
+                "link": "https://www.tokiomarine.com/th/th/life/products/personal/wealth/tokio-link.html",
+                "image": "https://upload.convolab.ai/tml-dev%2Fb91d1109-c7b1-4125-b426-5b963a1235f0.png"
+            }
+        ]
+    }
+]

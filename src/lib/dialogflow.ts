@@ -86,6 +86,9 @@ export async function detectTextIntent(text: string, sec = 'tivakorn17033') {
     };
 
     const responses = await sessionClient.detectIntent(request)
+
+    console.log(responses[0].queryResult)
+
     const result = responses[0].queryResult?.fulfillmentText as string
 
     return result || 'กรุณาลองใหม่อีกครั้ง'

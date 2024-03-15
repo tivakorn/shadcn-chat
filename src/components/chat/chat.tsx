@@ -1,8 +1,10 @@
 import { Message, UserData } from "@/app/data";
 import ChatTopbar from "./chat-topbar";
 import { ChatList } from "./chat-list";
-import React from "react";
+import React, { useEffect } from "react";
 import { detectTextIntent } from '../../lib/dialogflow'
+
+import { useStore } from '../../store/zustand'
 interface ChatProps {
   messages?: Message[];
   selectedUser: UserData;
@@ -11,14 +13,23 @@ interface ChatProps {
 
 export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
 
-  const [messagesState, setMessages] = React.useState<Message[]>(
-    []
-  );
+  const { messagesState, setMessages } = useStore()
 
   const sendMessage = async (newMessage: Message) => {
 
     const data = await fetch(`https://shadcn-chat-ten.vercel.app/api/${newMessage.message}`);
     const result = await data.json()
+
+    if (result.text === 'กรุณาลองใหม่อีกครั้ง') result['text'] = 'menu-card:0'
+
+    setMessages([
+      ...[newMessage, {
+        id: newMessage.id + 1,
+        avatar: '/User1.jpeg',
+        name: 'Jane Doe',
+        message: result.text
+      }]
+    ])
 
     // let text = await detectTextIntent()
 
@@ -144,20 +155,11 @@ export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
     //     text = 'เมื่อสอบผ่าน และได้รับการออก Code ตัวแทนกับทางบริษัทฯ ท่านสามารถขายประกันได้ในวันรุ่งขึ้นทันที'
     //     break;
     // }
-
-    setMessages([
-      ...messagesState,
-      ...[newMessage, {
-        id: newMessage.id + 1,
-        avatar: '/User1.png',
-        name: 'Jane Doe',
-        message: result.text
-      }]
-    ])
   }
 
   return (
     <div className="flex flex-col justify-between w-full h-full">
+
       <ChatTopbar selectedUser={selectedUser} />
 
       <ChatList
