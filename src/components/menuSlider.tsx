@@ -15,7 +15,7 @@ import * as React from 'react'
 import { useStore } from '../store/zustand'
 import menuCarousel from '../static/json/menu_carousel.json'
 import { Message } from "@/app/data";
-
+import Image from 'next/image'
 interface Data {
   id?: string
   type?: string
@@ -49,20 +49,20 @@ export const MenuSlider: React.FC<Props> = ({ type, id, sendMessage }) => {
     })
 
     if (menu) setData(menu)
-  }, [])
+  }, [id])
 
   const renderCoruselItem = () => {
 
     const memu = data.menu?.map((item, key) => {
 
       return (
-        <CarouselItem>
+        <CarouselItem key={key}>
           <div className="relative">
-            <img
+            <Image
               alt="Patient receiving a document"
               className="rounded-t-lg"
               height="200"
-              src={item.image}
+              src={item.image || ''}
               style={{
                 aspectRatio: "280/200",
                 objectFit: "cover",

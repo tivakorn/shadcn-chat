@@ -40,7 +40,7 @@ export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
     })
 
     if (menu) setData(menu)
-  }, [])
+  }, [id])
 
   const RenderMenu = () => {
 
