@@ -56,18 +56,19 @@ export const MenuSlider: React.FC<Props> = ({ type, id, sendMessage }) => {
     const memu = data.menu?.map((item, key) => {
 
       return (
-        <CarouselItem key={key}>
+        <CarouselItem key={key} >
           <div className="relative">
             <Image
               alt="Patient receiving a document"
               className="rounded-t-lg"
               height="200"
-              src={item.image || ''}
+              src={item?.image || ''}
               style={{
                 aspectRatio: "280/200",
                 objectFit: "cover",
               }}
               width="380"
+            // blurDataURL={item.image || ''}
             />
           </div>
           <div className="p-4 bg-white rounded-b-lg shadow">
