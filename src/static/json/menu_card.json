@@ -152,7 +152,7 @@
     {
         "id": "2-3",
         "type": "menu-card",
-        "title": "",
+        "title": "เมนู:การใช้งานระบบ Agent Web",
         "menu": [
             {
                 "title": "สอบถามการใช้งานระบบ Agent Web",
@@ -167,7 +167,7 @@
     {
         "id": "2-4",
         "type": "menu-card",
-        "title": "",
+        "title": "เมนู:การอบรม",
         "menu": [
             {
                 "title": "ตรวจสอบรายการฝึกอบรม",
