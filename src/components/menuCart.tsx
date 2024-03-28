@@ -47,18 +47,21 @@ export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
     const memu = data.menu?.map((item, key) => {
 
       return (
-        <li key={key} className="flex items-center justify-between p-4 hover:bg-accent hover:text-accent-foreground">
+        <li
+          key={key}
+          className="flex items-center justify-between p-2 hover:bg-accent hover:text-accent-foreground"
+          onClick={() => sendMessage(
+            {
+              id: messagesState.length + 1,
+              avatar: '/LoggedInUser.jpg',
+              name: 'Jakob Hoeg',
+              message: item.text_link || ''
+            })}
+        >
           <div className="flex items-center space-x-4">
             <label
               className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               htmlFor="todo1"
-              onClick={() => sendMessage(
-                {
-                  id: messagesState.length + 1,
-                  avatar: '/LoggedInUser.jpg',
-                  name: 'Jakob Hoeg',
-                  message: item.text_link || ''
-                })}
             >
               {item.title}
             </label>
@@ -85,8 +88,8 @@ export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
 
   return (
     <Card>
-      <CardHeader className="flex items-start">
-        <h2 className="text-lg peer-disabled:cursor-not-allowed peer-disabled:opacity-70">{data.title}</h2>
+      <CardHeader className="flex items-start bg-teal-500">
+        <h2 className="text-lg peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-white">{data.title}</h2>
       </CardHeader>
       <RenderMenu />
     </Card>

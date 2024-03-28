@@ -17,20 +17,39 @@ export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
 
   const sendMessage = async (newMessage: Message) => {
 
-    const data = await fetch(`http://localhost:3000/api/${newMessage.message}`);
+    const data = await fetch(`http://localhost:3000/api/${newMessage.message}`)
+
     const result = await data.json()
 
-    if (result.text === 'กรุณาลองใหม่อีกครั้ง') result['text'] = 'menu-card:0'
+    if (result.text === 'กรุณาลองใหม่อีกครั้ง'){
 
-    setMessages([
-      ...[newMessage, {
-        id: newMessage.id + 1,
-        avatar: '/User1.jpeg',
-        name: 'Jane Doe',
-        message: result.text
-      }]
-    ])
+      setMessages([
+        ...[newMessage, {
+          id: newMessage.id + 1,
+          avatar: '/User1.jpeg',
+          name: 'Jane Doe',
+          message: 'กรุณาสอบถามข้อมูลที่เกี่ยวข้องใหม่'
+        },
+        {
+          id: newMessage.id + 2,
+          avatar: '/User1.jpeg',
+          name: 'Jane Doe',
+          message: 'menu-card:0'
+        }
+      ]
+      ])
+    } 
+    else {
 
+      setMessages([
+        ...[newMessage, {
+          id: newMessage.id + 1,
+          avatar: '/User1.jpeg',
+          name: 'Jane Doe',
+          message: result.text
+        }]
+      ])
+    }
     // let text = await detectTextIntent()
 
     // switch (newMessage.message) {

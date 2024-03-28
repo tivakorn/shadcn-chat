@@ -18,7 +18,7 @@ export const useStore = create<TextStore>((set) => ({
             id: 1,
             avatar: '/User1.jpeg',
             name: 'Jane Doe',
-            message: 'สวัสดีค่ะ Mini ยินดีต้อนรับ คุณสามารถสอบถามข้อมูลด้านล่างได้เลยค่ะ'
+            message: 'สวัสดีค่ะ โตเกียวมารีนยินดีต้อนรับ คุณสามารถสอบถามข้อมูลด้านล่างได้เลยค่ะ'
         },
         {
             id: 2,
