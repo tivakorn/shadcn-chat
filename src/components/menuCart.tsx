@@ -52,6 +52,13 @@ export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
             <label
               className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               htmlFor="todo1"
+              onClick={() => sendMessage(
+                {
+                  id: messagesState.length + 1,
+                  avatar: '/LoggedInUser.jpg',
+                  name: 'Jakob Hoeg',
+                  message: item.text_link || ''
+                })}
             >
               {item.title}
             </label>
