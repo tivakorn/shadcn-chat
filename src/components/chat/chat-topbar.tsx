@@ -32,7 +32,7 @@ export default function ChatTopbar({selectedUser}: ChatTopbarProps) {
           </div> */}
         {/* </div> */}
 
-          <h1 className='text-white'>Tokio Marine Life Thailand</h1>
+          <h1 className='text-white text-2xl'>Tokio Marine Life Thailand</h1>
           {/* {TopbarIcons.map((icon, index) => (
             <Link
               key={index}

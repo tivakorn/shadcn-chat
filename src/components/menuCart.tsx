@@ -47,7 +47,7 @@ export const MenuCart: React.FC<Props> = ({ type, id, sendMessage }) => {
     const memu = data.menu?.map((item, key) => {
 
       return (
-        <li key={key} className="flex items-center justify-between p-4">
+        <li key={key} className="flex items-center justify-between p-4 hover:bg-accent hover:text-accent-foreground">
           <div className="flex items-center space-x-4">
             <label
               className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
