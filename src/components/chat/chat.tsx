@@ -17,8 +17,7 @@ export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
 
   const sendMessage = async (newMessage: Message) => {
 
-    const data = await fetch(`http://localhost:3000/api/${newMessage.message}`)
-
+    const data = await fetch(`https://shadcn-chat-ten.vercel.app/api/${newMessage.message}`);
     const result = await data.json()
 
     if (result.text === 'กรุณาลองใหม่อีกครั้ง'){
@@ -50,6 +49,7 @@ export function Chat({ messages, selectedUser, isMobile }: ChatProps) {
         }]
       ])
     }
+
     // let text = await detectTextIntent()
 
     // switch (newMessage.message) {
